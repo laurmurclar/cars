@@ -1,8 +1,7 @@
 class Part
-  attr_accessor :name, :price
+  attr_accessor :name
 
-  def initialize(name:, price:)
+  def initialize(name:)
     @name = name
-    @price = price
   end
 end
