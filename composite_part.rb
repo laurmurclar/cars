@@ -8,4 +8,8 @@ class CompositePart < Part
     super(name: name)
     @components = components
   end
+
+  def to_s
+    "#{@name} (#{@components.map(&:to_s).join(", ")})"
+  end
 end
